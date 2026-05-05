@@ -284,8 +284,8 @@ class CarlaSimulation(DrivingSimulation):
 
         # Auto-attach a collision sensor to the ego so users can check
         # ego.sensors['collision'].has_collision without explicit declaration.
-        if obj is self.scene.egoObject and 'collision' not in obj.sensors:
-            obj.sensors['collision'] = CarlaCollisionSensor()
+        if obj is self.scene.egoObject and "collision" not in obj.sensors:
+            obj.sensors["collision"] = CarlaCollisionSensor()
 
         # Adding sensors if available
         if obj.sensors:
